@@ -1,0 +1,16 @@
+package com.product.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.product.model.viva;
+
+@Repository
+public interface vivaRepository extends JpaRepository <viva,Integer> {
+	List<viva> findByManareaStartingWith(String prefix);
+	List<viva> findByManareaEndingWith(String suffix);
+	List<viva> findByClr(String clr);
+
+}

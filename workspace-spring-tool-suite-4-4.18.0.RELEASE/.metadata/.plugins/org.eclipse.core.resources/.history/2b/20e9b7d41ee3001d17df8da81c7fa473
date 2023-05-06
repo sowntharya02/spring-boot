@@ -1,0 +1,31 @@
+package com.product.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class viva {
+	@Id
+	private int batno;
+	public int getBatno() {
+		return batno;
+	}
+	public void setBatno(int batno) {
+		this.batno = batno;
+	}
+	public String getManarea() {
+		return manarea;
+	}
+	public void setManarea(String manarea) {
+		this.manarea = manarea;
+	}
+	public int getCost() {
+		return cost;
+	}
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+	private String manarea;
+	private int cost;
+
+}

@@ -1,0 +1,66 @@
+package com.product.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class viva {
+	@Id
+	private int batno;
+	public int getBatno() {
+		return batno;
+	}
+	public void setBatno(int batno) {
+		this.batno = batno;
+	}
+	public String getManarea() {
+		return manarea;
+	}
+	public void setManarea(String manarea) {
+		this.manarea = manarea;
+	}
+	public int getCost() {
+		return cost;
+	}
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+	private String manarea;
+	private String flavour;
+	private int calories;
+	private String type;
+	private String protein;
+	private int cost;
+	private String quantity;
+	public String getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+	public String getFlavour() {
+		return flavour;
+	}
+	public void setFlavour(String flavour) {
+		this.flavour = flavour;
+	}
+	public int getCalories() {
+		return calories;
+	}
+	public void setCalories(int calories) {
+		this.calories = calories;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getProtein() {
+		return protein;
+	}
+	public void setProtein(String protein) {
+		this.protein = protein;
+	}
+	
+}

@@ -1,0 +1,15 @@
+package com.example.mail.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+
+public class Draft {
+	@GetMapping("/type")
+	public String type()
+	{
+		return "Draft is saved";
+	}
+
+}
